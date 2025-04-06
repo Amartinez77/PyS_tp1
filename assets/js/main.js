@@ -92,3 +92,53 @@ document.addEventListener("DOMContentLoaded", () => {
   toggle.addEventListener("change", updatePrices);
   updatePrices(); // Al cargar
 });
+
+// scripts para la pagina blog.html
+
+// Scroll Reveal para los artículos
+document.addEventListener("DOMContentLoaded", function () {
+  const articles = document.querySelectorAll(".article-card");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+    }
+  );
+
+  articles.forEach((article) => {
+    observer.observe(article);
+  });
+
+  // Filtrado de artículos
+  const filterButtons = document.querySelectorAll(".filter-btn");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Quitar active de todos los botones
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      // Añadir active al botón clickeado
+      button.classList.add("active");
+
+      const filter = button.getAttribute("data-filter");
+      const articles = document.querySelectorAll(".article-card");
+
+      articles.forEach((article) => {
+        if (
+          filter === "all" ||
+          article.getAttribute("data-tags").includes(filter)
+        ) {
+          article.style.display = "block";
+        } else {
+          article.style.display = "none";
+        }
+      });
+    });
+  });
+});

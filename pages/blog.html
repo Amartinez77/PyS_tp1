@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog de Fitness | Be Strong</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Menú -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="container-logo">
+          <a href="../index.html" class="logo"
+            >Be <span class="logo-pipe">|</span> Strong</a
+          >
+        </div>
+        <div class="container-menu">
+          <ul class="nav-list">
+            <li><a href="/pages/clases.html">Clases</a></li>
+            <li><a href="/pages/entrenadores.html">Entrenadores</a></li>
+            <li><a href="/pages/planes.html">Planes</a></li>
+            <li><a href="/pages/blog.html" class="active">Blog</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="blog-main">
+      <!-- Hero Section -->
+      <section class="blog-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1>Blog de Fitness</h1>
+          <p>Consejos, rutinas y nutrición para tu mejor versión</p>
+        </div>
+      </section>
+
+      <!-- Filtros -->
+      <div class="blog-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="rutinas">Rutinas</button>
+        <button class="filter-btn" data-filter="nutricion">Nutrición</button>
+        <button class="filter-btn" data-filter="consejos">Consejos</button>
+        <button class="filter-btn" data-filter="entrenamiento">
+          Entrenamiento
+        </button>
+      </div>
+
+      <!-- Grid de artículos -->
+      <div class="blog-container">
+        <!-- Artículo 1 -->
+        <article class="article-card" data-tags="rutinas entrenamiento">
+          <img
+            src="../assets/img/blog1.webp"
+            alt="Rutina de fuerza"
+            class="article-image"
+          />
+          <div class="article-content">
+            <span class="article-date">15 Marzo 2023</span>
+            <h2 class="article-title">Rutina de Fuerza para Principiantes</h2>
+            <p class="article-excerpt">
+              Aprende los fundamentos para construir músculo de manera efectiva
+              y segura en tus primeros meses de entrenamiento.
+            </p>
+            <div class="article-tags">
+              <span class="tag">rutinas</span>
+              <span class="tag">entrenamiento</span>
+            </div>
+            <a href="#" class="read-more">Leer más →</a>
+          </div>
+        </article>
+
+        <!-- Artículo 2 -->
+        <article class="article-card" data-tags="nutricion consejos">
+          <img
+            src="../assets/img/blog2.jpg"
+            alt="Alimentos saludables"
+            class="article-image"
+          />
+          <div class="article-content">
+            <span class="article-date">10 Marzo 2023</span>
+            <h2 class="article-title">
+              5 Alimentos Esenciales para Ganar Músculo
+            </h2>
+            <p class="article-excerpt">
+              Descubre los alimentos que no pueden faltar en tu dieta si buscas
+              aumentar tu masa muscular de forma saludable.
+            </p>
+            <div class="article-tags">
+              <span class="tag">nutrición</span>
+              <span class="tag">consejos</span>
+            </div>
+            <a href="#" class="read-more">Leer más →</a>
+          </div>
+        </article>
+
+        <!-- Artículo 3 -->
+        <article class="article-card" data-tags="consejos entrenamiento">
+          <img
+            src="../assets/img/blog3.webp"
+            alt="Estiramientos"
+            class="article-image"
+          />
+          <div class="article-content">
+            <span class="article-date">5 Marzo 2023</span>
+            <h2 class="article-title">La Importancia de los Estiramientos</h2>
+            <p class="article-excerpt">
+              Cómo y cuándo estirar para mejorar tu rendimiento y prevenir
+              lesiones durante tus entrenamientos.
+            </p>
+            <div class="article-tags">
+              <span class="tag">consejos</span>
+              <span class="tag">entrenamiento</span>
+            </div>
+            <a href="#" class="read-more">Leer más →</a>
+          </div>
+        </article>
+
+        <!-- Artículo 4 -->
+        <article class="article-card" data-tags="nutricion">
+          <img
+            src="../assets/img/blog4.avif"
+            alt="Suplementos"
+            class="article-image"
+          />
+          <div class="article-content">
+            <span class="article-date">28 Febrero 2023</span>
+            <h2 class="article-title">Guía de Suplementos para Fitness</h2>
+            <p class="article-excerpt">
+              Qué suplementos valen la pena y cuáles son solo marketing. Una
+              guía honesta basada en evidencia científica.
+            </p>
+            <div class="article-tags">
+              <span class="tag">nutrición</span>
+            </div>
+            <a href="#" class="read-more">Leer más →</a>
+          </div>
+        </article>
+
+        <!-- Artículo 5 -->
+        <article class="article-card" data-tags="rutinas">
+          <img
+            src="../assets/img/blog5.jpg"
+            alt="Cardio"
+            class="article-image"
+          />
+          <div class="article-content">
+            <span class="article-date">20 Febrero 2023</span>
+            <h2 class="article-title">Cardio vs Pesas: ¿Qué es Mejor?</h2>
+            <p class="article-excerpt">
+              Analizamos los beneficios de cada tipo de entrenamiento y cómo
+              combinarlos para maximizar tus resultados.
+            </p>
+            <div class="article-tags">
+              <span class="tag">rutinas</span>
+            </div>
+            <a href="#" class="read-more">Leer más →</a>
+          </div>
+        </article>
+
+        <!-- Artículo 6 -->
+        <article class="article-card" data-tags="consejos">
+          <img
+            src="../assets/img/blog6.webp"
+            alt="Motivación"
+            class="article-image"
+          />
+          <div class="article-content">
+            <span class="article-date">15 Febrero 2023</span>
+            <h2 class="article-title">Cómo Mantener la Motivación en el Gym</h2>
+            <p class="article-excerpt">
+              Estrategias comprobadas para no abandonar tus entrenamientos y
+              construir el hábito del ejercicio.
+            </p>
+            <div class="article-tags">
+              <span class="tag">consejos</span>
+            </div>
+            <a href="#" class="read-more">Leer más →</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Sección de comentarios -->
+      <section class="comments-section">
+        <h2 class="comments-title">Comentarios</h2>
+
+        <!-- Comentario 1 -->
+        <div class="comment">
+          <div class="comment-avatar">JD</div>
+          <div class="comment-content">
+            <div class="comment-author">Juan Díaz</div>
+            <div class="comment-date">12 Marzo 2023</div>
+            <div class="comment-text">
+              Excelente artículo sobre rutinas para principiantes. Justo lo que
+              necesitaba para empezar en el gimnasio sin sentirme perdido.
+              ¡Gracias!
+            </div>
+          </div>
+        </div>
+
+        <!-- Comentario 2 -->
+        <div class="comment">
+          <div class="comment-avatar">MP</div>
+          <div class="comment-content">
+            <div class="comment-author">María Pérez</div>
+            <div class="comment-date">8 Marzo 2023</div>
+            <div class="comment-text">
+              La guía de suplementos me aclaró muchas dudas. Siempre me
+              preguntaba si realmente necesitaba tomar proteína en polvo o si
+              era suficiente con mi dieta.
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario de comentarios -->
+        <form class="comment-form">
+          <h3 class="form-title">Deja tu comentario</h3>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email (no se publicará)</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="comment">Comentario</label>
+            <textarea id="comment" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Enviar comentario</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Columna 1: Newsletter -->
+        <div class="footer-column">
+          <h3 class="footer-title">Suscríbete a nuestro newsletter</h3>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Tu correo electrónico"
+              required
+              class="newsletter-input"
+            />
+            <button type="submit" class="newsletter-button">Suscribirse</button>
+          </form>
+          <p class="footer-text">Recibe promociones y tips de entrenamiento.</p>
+        </div>
+
+        <!-- Columna 2: Redes Sociales -->
+        <div class="footer-column">
+          <h3 class="footer-title">Síguenos</h3>
+          <ul class="social-media">
+            <li>
+              <a
+                href="#"
+                class="social-link"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i> Facebook
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="social-link"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="social-link"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-twitter"></i> Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="social-link"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <i class="fab fa-youtube"></i> YouTube
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Mapa -->
+        <div class="footer-column">
+          <h3 class="footer-title">Visítanos</h3>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889527!2d-58.383759!3d-34.603734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzEzLjQiUyA1OMKwMjMnMDEuNSJX!5e0!3m2!1sen!2sar!4v1620000000000!5m2!1sen!2sar"
+              width="100%"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              aria-label="Mapa de ubicación del gimnasio"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2023 Be | Strong. Todos los derechos reservados.</p>
+          <ul class="footer-links">
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

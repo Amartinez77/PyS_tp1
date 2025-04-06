@@ -32,101 +32,113 @@
     </header>
 
     <!-- Main -->
+    <main class="planes-main">
+      <!-- Hero Section -->
+      <section class="planes-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1>Nuestros Planes</h1>
+          <p>Elige el que mejor se adapte a tus objetivos</p>
+        </div>
+      </section>
 
-    <main class="pricing-section">
-      <h1 class="pricing-title">Planes de Membresía</h1>
+      <section class="pricing-section">
+        <h1 class="pricing-title">Planes de Membresía</h1>
 
-      <!-- Toggle mensual/anual -->
-      <div class="billing-toggle">
-        <input type="checkbox" id="billingSwitch" class="toggle-checkbox" />
-        <label for="billingSwitch" class="toggle-label">
-          <span class="monthly">Mensual</span>
-          <span class="toggle-slider"></span>
-          <span class="annually">Anual</span>
-        </label>
-      </div>
-
-      <!-- Tabla de planes -->
-      <div class="pricing-table">
-        <div class="plan-card">
-          <h2>Plan Básico</h2>
-          <p class="price" data-monthly="$8.000" data-annually="$80.000">
-            $8.000
-          </p>
-          <ul>
-            <li>
-              <span class="tooltip" data-tooltip="Acceso libre al gimnasio"
-                >✔ Gimnasio libre</span
-              >
-            </li>
-            <li>
-              <span class="tooltip" data-tooltip="1 clase dirigida por semana"
-                >✔ 1 clase/semana</span
-              >
-            </li>
-            <li>
-              <span class="tooltip" data-tooltip="Sin acceso a área premium"
-                >✘ Zona premium</span
-              >
-            </li>
-          </ul>
-          <button class="btn-select">Elegir</button>
+        <!-- Toggle mensual/anual -->
+        <div class="billing-toggle">
+          <input type="checkbox" id="billingSwitch" class="toggle-checkbox" />
+          <label for="billingSwitch" class="toggle-label">
+            <span class="monthly">Mensual</span>
+            <span class="toggle-slider"></span>
+            <span class="annually">Anual</span>
+          </label>
         </div>
 
-        <div class="plan-card highlighted">
-          <h2>Plan Full</h2>
-          <p class="price" data-monthly="$12.000" data-annually="$120.000">
-            $12.000
-          </p>
-          <ul>
-            <li>
-              <span class="tooltip" data-tooltip="Acceso libre al gimnasio"
-                >✔ Gimnasio libre</span
-              >
-            </li>
-            <li>
-              <span class="tooltip" data-tooltip="Clases ilimitadas"
-                >✔ Clases ilimitadas</span
-              >
-            </li>
-            <li>
-              <span class="tooltip" data-tooltip="Acceso total a zona premium"
-                >✔ Zona premium</span
-              >
-            </li>
-          </ul>
-          <button class="btn-select">Elegir</button>
-        </div>
+        <!-- Tabla de planes -->
+        <div class="pricing-table">
+          <div class="plan-card">
+            <h2>Plan Básico</h2>
+            <p class="price" data-monthly="$8.000" data-annually="$80.000">
+              $8.000
+            </p>
+            <ul>
+              <li>
+                <span class="tooltip" data-tooltip="Acceso libre al gimnasio"
+                  >✔ Gimnasio libre</span
+                >
+              </li>
+              <li>
+                <span class="tooltip" data-tooltip="1 clase dirigida por semana"
+                  >✔ 1 clase/semana</span
+                >
+              </li>
+              <li>
+                <span class="tooltip" data-tooltip="Sin acceso a área premium"
+                  >✘ Zona premium</span
+                >
+              </li>
+            </ul>
+            <button class="btn-select">Elegir</button>
+          </div>
 
-        <div class="plan-card">
-          <h2>Plan Pro</h2>
-          <p class="price" data-monthly="$15.000" data-annually="$150.000">
-            $15.000
-          </p>
-          <ul>
-            <li>
-              <span class="tooltip" data-tooltip="Acceso ilimitado al gimnasio"
-                >✔ Acceso 24/7</span
-              >
-            </li>
-            <li>
-              <span
-                class="tooltip"
-                data-tooltip="Incluye asesoramiento nutricional"
-                >✔ Nutrición</span
-              >
-            </li>
-            <li>
-              <span
-                class="tooltip"
-                data-tooltip="Entrenamiento personalizado incluido"
-                >✔ Personal trainer</span
-              >
-            </li>
-          </ul>
-          <button class="btn-select">Elegir</button>
+          <div class="plan-card highlighted">
+            <h2>Plan Full</h2>
+            <p class="price" data-monthly="$12.000" data-annually="$120.000">
+              $12.000
+            </p>
+            <ul>
+              <li>
+                <span class="tooltip" data-tooltip="Acceso libre al gimnasio"
+                  >✔ Gimnasio libre</span
+                >
+              </li>
+              <li>
+                <span class="tooltip" data-tooltip="Clases ilimitadas"
+                  >✔ Clases ilimitadas</span
+                >
+              </li>
+              <li>
+                <span class="tooltip" data-tooltip="Acceso total a zona premium"
+                  >✔ Zona premium</span
+                >
+              </li>
+            </ul>
+            <button class="btn-select">Elegir</button>
+          </div>
+
+          <div class="plan-card">
+            <h2>Plan Pro</h2>
+            <p class="price" data-monthly="$15.000" data-annually="$150.000">
+              $15.000
+            </p>
+            <ul>
+              <li>
+                <span
+                  class="tooltip"
+                  data-tooltip="Acceso ilimitado al gimnasio"
+                  >✔ Acceso 24/7</span
+                >
+              </li>
+              <li>
+                <span
+                  class="tooltip"
+                  data-tooltip="Incluye asesoramiento nutricional"
+                  >✔ Nutrición</span
+                >
+              </li>
+              <li>
+                <span
+                  class="tooltip"
+                  data-tooltip="Entrenamiento personalizado incluido"
+                  >✔ Personal trainer</span
+                >
+              </li>
+            </ul>
+            <button class="btn-select">Elegir</button>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <!-- footer -->
