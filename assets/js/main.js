@@ -1,3 +1,40 @@
+// menu hamburguesa
+
+// Menú hamburguesa
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const containerMenu = document.querySelector(".container-menu");
+  const body = document.body;
+
+  menuToggle.addEventListener("click", function () {
+    containerMenu.classList.toggle("active");
+    body.classList.toggle("menu-open");
+
+    // Cambiar icono entre hamburguesa y X
+    const icon = this.querySelector("i");
+    if (containerMenu.classList.contains("active")) {
+      icon.classList.remove("fa-bars");
+      icon.classList.add("fa-times");
+    } else {
+      icon.classList.remove("fa-times");
+      icon.classList.add("fa-bars");
+    }
+  });
+
+  // Cerrar menú al hacer clic en un enlace (en móviles)
+  const navLinks = document.querySelectorAll(".nav-list a");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      if (window.innerWidth <= 768) {
+        containerMenu.classList.remove("active");
+        body.classList.remove("menu-open");
+        menuToggle.querySelector("i").classList.remove("fa-times");
+        menuToggle.querySelector("i").classList.add("fa-bars");
+      }
+    });
+  });
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".counter-number");
   const speed = 200; // Velocidad de la animación (ms)
