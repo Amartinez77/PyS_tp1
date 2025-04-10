@@ -35,36 +35,40 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const counters = document.querySelectorAll(".counter-number");
-  const speed = 200; // Velocidad de la animación (ms)
+// Contador animado
+document.addEventListener("DOMContentLoaded", function () {
+  const statItems = document.querySelectorAll(".stat-item");
 
-  counters.forEach((counter) => {
-    const target = +counter.getAttribute("data-target");
-    const count = +counter.innerText;
-    const increment = target / speed;
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const circle = entry.target.querySelector(".stat-circle");
+          const target = +circle.getAttribute("data-target");
+          const number = circle.querySelector(".stat-number");
+          const speed = 2000 / target;
 
-    const updateCount = () => {
-      const currentCount = +counter.innerText;
-      if (currentCount < target) {
-        counter.innerText = Math.ceil(currentCount + increment);
-        setTimeout(updateCount, 1);
-      } else {
-        counter.innerText = target + "+"; // Añade "+" al final
-      }
-    };
+          entry.target.classList.add("animated");
 
-    // Activa la animación al hacer scroll (Intersection Observer)
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          updateCount();
+          const animate = () => {
+            const value = +number.innerText;
+            if (value < target) {
+              number.innerText = Math.ceil(value + target / 50);
+              setTimeout(animate, speed);
+            } else {
+              number.innerText = target;
+            }
+          };
+
+          animate();
         }
-      },
-      { threshold: 0.5 }
-    );
+      });
+    },
+    { threshold: 0.5 }
+  );
 
-    observer.observe(counter);
+  statItems.forEach((item) => {
+    observer.observe(item);
   });
 });
 
@@ -179,3 +183,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// modo oscuro
+
+// Selector del botón
+const themeToggle = document.querySelector(".theme-toggle");
+
+// Función para cambiar el tema
+function toggleTheme() {
+  document.body.classList.toggle("dark-mode");
+
+  // Cambiar icono
+  const icon = themeToggle.querySelector("i");
+  if (document.body.classList.contains("dark-mode")) {
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+  } else {
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+  }
+}
+
+// Escuchar clic en el botón
+themeToggle.addEventListener("click", toggleTheme);

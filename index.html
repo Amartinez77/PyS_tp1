@@ -14,10 +14,18 @@
     <!--menu-->
     <header class="header">
       <nav class="navbar">
+        <!--
         <div class="container-logo">
           <a href="#" class="logo">Be <span class="logo-pipe">|</span> Strong</a>
         </div>
-
+        -->
+        <div class="container-logo">
+          <a href="#" class="logo-minimal">
+            <span>Be</span>
+            <span class="logo-pipe">|</span>
+            <span>Strong</span>
+          </a>
+        </div>
   <!-- boton hamburguesa -->
 
         <button class="menu-toggle" aria-label="abrir menu">
@@ -34,6 +42,11 @@
           </ul>
         </div>
       </nav>
+
+      <!-- Botón de cambio de tema -->
+      <button class="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-moon"></i>
+      </button>
     </header>
     <section class="hero">
       <!-- Contenedor del video de fondo (YouTube) -->
@@ -50,9 +63,9 @@
 
       <!-- Contenido animado sobre el video -->
       <div class="hero-content">
-        <h1 class="hero-title animate">Transforma tu cuerpo</h1>
-        <p class="hero-subtitle animate">Entrena con los mejores</p>
-        <a href="#" class="hero-button animate">¡Empieza hoy!</a>
+        <h1 class="hero-title animate">Hoy es el dia...</h1>
+        <p class="hero-subtitle animate">Empeza el cambio</p>
+        <a href="#" class="hero-button animate">¡Inscribite!</a>
       </div>
     </section>
 
@@ -122,32 +135,42 @@
         </div>
       </section>
 
-      <!-- contador -->
-
-      <section class="counter-section">
-        <div class="counter-container">
-          <!-- Contador 1 -->
-          <div class="counter">
-            <span class="counter-number" data-target="500">0</span>
-            <span class="counter-text">Socios satisfechos</span>
+      <!-- Contador Circular -->
+    <section class="stats-section">
+      <div class="stats-container">
+        <!-- Stat 1 -->
+        <div class="stat-item">
+          <div class="stat-circle" data-target="500">
+            <span class="stat-number">0</span>
           </div>
-          <!-- Contador 2 -->
-          <div class="counter">
-            <span class="counter-number" data-target="100">0</span>
-            <span class="counter-text">Clases semanales</span>
-          </div>
-          <!-- Contador 3 -->
-          <div class="counter">
-            <span class="counter-number" data-target="20">0</span>
-            <span class="counter-text">Entrenadores</span>
-          </div>
-          <!-- Contador 4 -->
-          <div class="counter">
-            <span class="counter-number" data-target="10">0</span>
-            <span class="counter-text">Años de experiencia</span>
-          </div>
+          <p class="stat-label">Clientes felices</p>
         </div>
-      </section>
+        
+        <!-- Stat 2 -->
+        <div class="stat-item">
+          <div class="stat-circle" data-target="100">
+            <span class="stat-number">0</span>
+          </div>
+          <p class="stat-label">Clases semanales</p>
+        </div>
+        
+        <!-- Stat 3 -->
+        <div class="stat-item">
+          <div class="stat-circle" data-target="20">
+            <span class="stat-number">0</span>
+          </div>
+          <p class="stat-label">Entrenadores</p>
+        </div>
+        
+        <!-- Stat 4 -->
+        <div class="stat-item">
+          <div class="stat-circle" data-target="10">
+            <span class="stat-number">0</span>
+          </div>
+          <p class="stat-label">Años de experiencia</p>
+        </div>
+      </div>
+    </section>
 
       <!-- testimonios -->
 
@@ -216,99 +239,48 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer-container">
-        <!-- Columna 1: Newsletter -->
-        <div class="footer-column">
-          <h3 class="footer-title">Suscríbete a nuestro newsletter</h3>
-          <form class="newsletter-form">
-            <input
-              type="email"
-              placeholder="Tu correo electrónico"
-              required
-              class="newsletter-input"
-            />
-            <button type="submit" class="newsletter-button">Suscribirse</button>
-          </form>
-          <p class="footer-text">Recibe promociones y tips de entrenamiento.</p>
-        </div>
-
-        <!-- Columna 2: Redes Sociales -->
-        <div class="footer-column">
-          <h3 class="footer-title">Síguenos</h3>
-          <ul class="social-media">
-            <li>
-              <a
-                href="#"
-                class="social-link"
-                target="_blank"
-                aria-label="Facebook"
-              >
-                <i class="fab fa-facebook-f"></i> Facebook
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="social-link"
-                target="_blank"
-                aria-label="Instagram"
-              >
-                <i class="fab fa-instagram"></i> Instagram
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="social-link"
-                target="_blank"
-                aria-label="Twitter"
-              >
-                <i class="fab fa-twitter"></i> Twitter
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="social-link"
-                target="_blank"
-                aria-label="YouTube"
-              >
-                <i class="fab fa-youtube"></i> YouTube
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Columna 3: Mapa -->
-        <div class="footer-column">
-          <h3 class="footer-title">Visítanos</h3>
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889527!2d-58.383759!3d-34.603734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzEzLjQiUyA1OMKwMjMnMDEuNSJX!5e0!3m2!1sen!2sar!4v1620000000000!5m2!1sen!2sar"
-              width="100%"
-              height="200"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              aria-label="Mapa de ubicación del gimnasio"
-            >
-            </iframe>
-          </div>
+    <!-- Footer -->
+    <footer class="footer-minimal">
+    <div class="footer-content">
+      <!-- Logo y eslogan -->
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo">Be <span>|</span> Strong</a>
+        <p class="footer-slogan">Transformando cuerpos, cambiando vidas</p>
+      </div>
+      
+      <!-- Mapa -->
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889527!2d-58.383759!3d-34.603734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzEzLjQiUyA1OMKwMjMnMDEuNSJX!5e0!3m2!1sen!2sar!4v1620000000000!5m2!1sen!2sar"
+          width="100%"
+          height="200"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          aria-label="Mapa de ubicación del gimnasio">
+        </iframe>
+      </div>
+      
+      <!-- Redes sociales minimalistas -->
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+      
+      <!-- Copyright y legal -->
+      <div class="footer-legal">
+        <p>&copy; 2023 Be | Strong. Todos los derechos reservados.</p>
+        <div class="legal-links">
+          <a href="#">Privacidad</a>
+          <span>•</span>
+          <a href="#">Términos</a>
         </div>
       </div>
+    </div>
+  </footer>
 
-      <!-- Copyright -->
-      <div class="footer-bottom">
-        <div class="container">
-          <p>&copy; 2023 Be | Strong. Todos los derechos reservados.</p>
-          <ul class="footer-links">
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Términos y condiciones</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
