@@ -42,3 +42,58 @@ Sitio web para gimnasio con enfoque en usabilidad y diseño responsive. Incluye:
     │   └── style.css   # Estilos globales
     └── js/
         └── main.js     # Lógica principal
+
+## 🛠 Tecnologías Utilizadas
+| Tecnología       | Versión | Uso                          |
+|------------------|---------|------------------------------|
+| HTML5            | -       | Estructura semántica         |
+| CSS3             | -       | Estilos y animaciones        |
+| JavaScript (ES6) | -       | Interactividad               |
+| Font Awesome     | 6.4.0   | Íconos                       |
+| Google Fonts     | -       | Tipografía                   |
+
+## ✨ Features Técnicas
+### 1. Modo Claro/Oscuro
+
+// main.js
+function toggleTheme() {
+  document.body.classList.toggle('dark-mode');
+}
+
+Ventajas:
+
+Sin dependencias externas
+
+Cambio instantáneo
+
+Estilos centralizados en CSS
+
+### 2. Menú Hamburguesa
+
+/* Mobile-first approach */
+@media (max-width: 768px) {
+  .nav-list {
+    transform: translateX(100%);
+  }
+}
+
+### Blog con CSS Grid
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+## 🚀 Cómo Ejecutar Localmente
+
+### 1. Clona el repositorio
+
+git clone https://github.com/tuusuario/be-strong.git
+
+### 2. Abre con servidor local:
+
+python -m http.server 8000
+
+### Accede en:
+
+http://localhost:8000
