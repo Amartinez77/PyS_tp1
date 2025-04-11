@@ -1,0 +1,44 @@
+# Be | Strong - Sitio Web de Fitness
+
+[![Preview del Sitio](https://img.shields.io/badge/Preview-Live_Demo-brightgreen)](https://tudominio.com)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
+## 🏋️‍♂️ Descripción
+Sitio web para gimnasio con enfoque en usabilidad y diseño responsive. Incluye:
+- Páginas informativas (clases, entrenadores, planes)
+- Blog interactivo
+- Modo claro/oscuro
+
+## 🎨 Decisiones de Diseño
+### Paleta de Colores
+| Color               | Uso                  | Accesibilidad |
+|---------------------|----------------------|---------------|
+| `#e63946` (Rojo)    | Botones, acentos     | WCAG AA       |
+| `#1a1a2e` (Azul)    | Fondos oscuros       | WCAG AAA      |
+| `#f8f9fa` (Blanco)  | Fondo principal      | -             |
+
+![Paleta de Colores](https://via.placeholder.com/400x100/e63946,1a1a2e,f8f9fa/ffffff?text=Be|Strong+Colors)
+
+### Tipografía
+- **Arial (Sans-serif)**: Optimizada para legibilidad en pantallas
+- **Tamaños**: 
+  - Desktop: 1.2rem (cuerpo), 2.5rem (títulos)
+  - Mobile: 1rem (cuerpo), 1.8rem (títulos)
+
+## 🏗 Estructura del Proyecto
+```bash
+.
+├── index.html          # Página principal
+├── pages/              # Páginas secundarias
+│   ├── clases.html
+│   ├── entrenadores.html
+│   ├── planes.html
+│   ├── blog.html
+│   └── contacto.html
+└── assets/
+    ├── css/
+    │   └── style.css   # Estilos globales
+    └── js/
+        └── main.js     # Lógica principal
