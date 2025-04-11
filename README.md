@@ -43,6 +43,8 @@ Sitio web para gimnasio con enfoque en usabilidad y diseño responsive. Incluye:
     └── js/
         └── main.js     # Lógica principal
 
+```
+
 ## 🛠 Tecnologías Utilizadas
 | Tecnología       | Versión | Uso                          |
 |------------------|---------|------------------------------|
