@@ -90,11 +90,14 @@ Estilos centralizados en CSS
 
 ### 1. Clona el repositorio
 
+```console
 git clone https://github.com/tuusuario/be-strong.git
-
+```
 ### 2. Abre con servidor local:
 
+```console
 python -m http.server 8000
+```
 
 ### Accede en:
 
