@@ -57,10 +57,12 @@ Sitio web para gimnasio con enfoque en usabilidad y diseño responsive. Incluye:
 ## ✨ Features Técnicas
 ### 1. Modo Claro/Oscuro
 
+```
 // main.js
 function toggleTheme() {
   document.body.classList.toggle('dark-mode');
 }
+```
 
 Ventajas:
 
@@ -72,19 +74,23 @@ Estilos centralizados en CSS
 
 ### 2. Menú Hamburguesa
 
+```
 /* Mobile-first approach */
 @media (max-width: 768px) {
   .nav-list {
     transform: translateX(100%);
   }
 }
+```
 
 ### Blog con CSS Grid
 
+```
 .blog-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+```
 
 ## 🚀 Cómo Ejecutar Localmente
 
@@ -101,4 +107,6 @@ python -m http.server 8000
 
 ### Accede en:
 
+```console
 http://localhost:8000
+```
