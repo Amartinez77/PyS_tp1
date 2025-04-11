@@ -1,6 +1,6 @@
 # Be | Strong - Sitio Web de Fitness
 
-[![Preview del Sitio](https://img.shields.io/badge/Preview-Live_Demo-brightgreen)](https://tudominio.com)
+[![Preview del Sitio](https://i.postimg.cc/wMrqhNwB/image.png)](https://be-strong1.netlify.app/)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
